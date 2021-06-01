@@ -1,13 +1,3 @@
--- -- Ada Programming & endterm, 2021. May. 14.
--- This solution was submitted and prepared by <Giorgi Botkoveli, DJSEF1> for the endterm assignment of the Ada Programming course.
--- I declare that this solution is my own work.
---  - I have not copied or used third-party solutions.
--- I have not passed my solution to my classmates, neither made it public.
-
-
--- it will count as a disciplinary fault.
---- The most serious consequence of a disciplinary fault can be dismissal of the student from the University.
-
 with Ada.Calendar;
 with Ada.Text_IO;
 use Ada.Text_IO;
