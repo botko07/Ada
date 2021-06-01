@@ -1,0 +1,59 @@
+Task programming endterm
+For each mark create a directory and place the solution for that mark in there (e.g. /2 for mark 2, /3 for mark 3 etc.)
+Submit in a .zip only source files: .adb, .ads files and the connected .gpr project file. Please delete the .o, .exe etc. files. Please fill the data required below and include it for every mark in the .adb solution file, by this you declare it is your own solution.
+
+– Ada Programming & endterm, 2021. May. 14.
+– This solution was submitted and prepared by <Name, Neptun ID> for the endterm assignment of the Ada Programming course.
+– I declare that this solution is my own work.
+– I have not copied or used third-party solutions.
+– I have not passed my solution to my classmates, neither made it public.
+– Students’ regulation of Eotvos Lorand University (ELTE Regulations Vol. II. 74/C.) states that as long as
+– a student presents another student’s work - or at least the significant part of it - as his/her own performance,
+– it will count as a disciplinary fault.
+– The most serious consequence of a disciplinary fault can be dismissal of the student from the University.
+Intro:
+
+the coronavirus situation is not getting better in many countries, but luckily many vaccines were created and started to get distributed to local hospitals, so they can be available to everyone, and the faster the people get vaccinated the faster the normal life will be back.
+
+Note:
+
+All important activities should be printed by a protected monitor,
+Random generators have to be protected
+each minute on text is 0.1 seconds in programming
+For mark 2:
+Create a patient and a hospital task. The hospital takes random (float) time to open, after that it waits for patients to enter and vaccinate
+
+(infinite many can be accepted with select … or terminate). It prints all events.
+
+The patient calls the hospital to get vaccinated. He is waiting maximum 5 minutes to get admitted, after got in,
+
+he finishes and writes “patient got vaccinated”. If not successful, then prints “did not get vaccine”.
+
+For mark 3:
+Convert the patient task into a task type, with patient name as a discriminant.
+
+Each patient has a random Boolean to decide if he wants to take vaccine or not.
+
+If he wants it, he tries to get vaccinated at the hospital within 5 minutes.
+
+If he could get vaccinated before the 5 minutes end, he writes “patient_name, got vaccinated” and finishes.
+
+If he couldn’t reach the hospital or refused the vaccine he tries once again.
+
+If he couldn’t get vaccinated at all, he writes “patient_name couldn’t get the vaccine today” and finishes.
+
+If the hospital closed or does not accept anymore patients, then he handles it as exception and prints “hospital closed?”.
+
+The hospital will allow a patient to get vaccinated after every 5 minutes, up to 5 patients, and it will keep open for 2 hours (120 minutes) then closes.
+
+Create an array of 10 dynamic patients. The main program creates the patients, each arrives at 5 minutes interval.
+
+For mark 4:
+Convert the hospital task into a task type, create an array of 3 dynamic hospitals.
+
+Increase the number of patients from 10 to 20, and each patient should pick one random hospital.
+
+For mark 5.
+A medical chief officer should keep monitoring the statistics for the vaccination process.
+
+Create an officer, protected, that calculates the number of patients who got vaccinated, and it also prints it at the end of the process.
